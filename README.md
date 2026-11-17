@@ -6,6 +6,8 @@ Bilingual marketing website for a private security services company operating in
 
 - [`docs/01-site-structure.md`](docs/01-site-structure.md) — navigation, full sitemap, page templates,
   bilingual architecture, content model, repo layout, stack recommendation, build phases.
+- [`docs/02-build-plan.md`](docs/02-build-plan.md) — industry baseline, Bangladeshi cultural & market layer,
+  legal context, design tokens, component inventory, technical architecture, build milestones, inputs checklist.
 
 ## Languages
 
@@ -18,7 +20,7 @@ Full content parity between locales is a hard requirement, not a stretch goal.
 
 ## Next step
 
-Resolve the open decisions in §10 of the structure doc, then start Phase 1 (scaffold + i18n routing).
+Supply the inputs in §8 of the build plan; M1 (foundation scaffold) can start in parallel with placeholders.
 
 ## Locked decisions
 

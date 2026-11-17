@@ -109,7 +109,7 @@ What's included → who it's for → guard profile & deployment model (shift pat
 | Numerals | Bangla numerals (০–৯) allowed in prose; **phone numbers, prices, dates stay Latin digits** so `tel:` links, copy-paste and validation work. |
 | Formats | `৳` BDT, "BDT 00,000 / প্রহরী / মাস", dates `DD MMM YYYY` with Bangla month names. |
 | Forms | Labels, placeholders, validation and error messages fully translated; Bangla-script names and addresses accepted and stored correctly (UTF-8 end to end). |
-| SEO | `hreflang` bn/en + `x-default`, per-locale titles/descriptions/OG, single sitemap with both, `LocalBusiness`/`SecurityService` + `FAQPage` schema, Google Business Profile in both languages. |
+| SEO | `hreflang` bn/en + `x-default`, per-locale titles/descriptions/OG, single sitemap with both, `Organization`, `LocalBusiness`, `Service`, `FAQPage` and `JobPosting` schema, Google Business Profile in both languages. |
 
 ---
 
