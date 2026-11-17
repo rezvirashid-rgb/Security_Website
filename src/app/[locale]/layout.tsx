@@ -18,8 +18,18 @@ const hind = Hind_Siliguri({
   display: "swap",
 });
 
-if (site.isPlaceholder && process.env.VERCEL_ENV === "production") {
-  throw new Error("Refusing a production build with placeholder company data (src/config/site.ts).");
+// Placeholder data must never reach production by accident. Going live as a design
+// preview is an explicit choice: set ALLOW_PLACEHOLDER_PRODUCTION=1 on the Vercel project
+// (and remove it once src/config/site.ts holds real data and isPlaceholder is false).
+if (
+  site.isPlaceholder &&
+  process.env.VERCEL_ENV === "production" &&
+  process.env.ALLOW_PLACEHOLDER_PRODUCTION !== "1"
+) {
+  throw new Error(
+    "Refusing a production build with placeholder company data (src/config/site.ts). " +
+      "Set ALLOW_PLACEHOLDER_PRODUCTION=1 to publish it as a design preview.",
+  );
 }
 
 export async function generateStaticParams() {

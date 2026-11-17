@@ -41,7 +41,8 @@ Edits are reloaded in the browser as you save.
 | Page layouts | `src/app/[locale]/…` and `src/components/sections/…` |
 
 While `isPlaceholder` is `true` the site shows a "design preview" ribbon, tells search
-engines not to index it, and a Vercel production build refuses to run.
+engines not to index it, and a Vercel production build refuses to run unless the Vercel
+project sets `ALLOW_PLACEHOLDER_PRODUCTION=1`. Remove that variable when real data is in.
 
 ## Guard-rails
 

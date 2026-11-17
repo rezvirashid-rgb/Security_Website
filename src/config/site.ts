@@ -3,7 +3,8 @@
  * company supplies real data (see docs/02-build-plan.md §8).
  *
  * While `isPlaceholder` is true the site shows a "design preview" ribbon,
- * is marked noindex, and a Vercel production build refuses to run.
+ * is marked noindex, and a Vercel production build refuses to run unless the
+ * project sets ALLOW_PLACEHOLDER_PRODUCTION=1 (publishing it as a preview).
  */
 export const site = {
   isPlaceholder: true,
