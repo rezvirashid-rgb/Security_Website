@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "siteName": "[Company Name] Security Services Limited",
+    "titleTemplate": "%s | [Company Name]",
+    "homeTitle": "Trained, vetted security guard services in Bangladesh",
+    "description": "Licensed manned guarding for factories, offices, banks and residential buildings — police-verified guards, regular supervision and a 24/7 hotline."
+  },
+  "brand": {
+    "name": "[Company Name]",
+    "tagline": "Security Services Limited"
+  },
+  "preview": {
+    "ribbon": "Design preview: company name, figures, licence numbers, address and phone numbers are samples. Photo, logo and testimonial slots are left empty on purpose.",
+    "sample": "Sample text"
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "breadcrumb": "Breadcrumb",
+    "mainNav": "Main menu",
+    "langLabel": "Choose language"
+  },
+  "topbar": {
+    "hours": "Office: Sat–Thu, 9am–6pm",
+    "ops": "Operations: 24 hours, 7 days"
+  },
+  "lang": {
+    "bn": "বাংলা",
+    "en": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "industries": "Industries",
+    "training": "Training",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "cta": {
+    "quote": "Get a Quote",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "hotline": "24/7 Hotline",
+    "profile": "Company Profile",
+    "learnMore": "Learn more",
+    "allServices": "View all services",
+    "survey": "Free site survey",
+    "apply": "Apply online",
+    "backHome": "Back to home",
+    "bandTitle": "A free security assessment for your premises",
+    "bandLead": "Call us or fill in the quote form. An officer will contact you within one working day to arrange a site survey."
+  },
+  "stats": {
+    "years": "Years of experience",
+    "guards": "Guards on duty",
+    "clients": "Client organisations",
+    "districts": "Districts served"
+  },
+  "licence": {
+    "title": "Licences & registration",
+    "moha": "Home Ministry licence",
+    "trade": "Trade licence",
+    "tin": "TIN",
+    "bin": "BIN",
+    "licensedBy": "Licensed by the Ministry of Home Affairs",
+    "number": "Licence no."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Licensed private security services company",
+      "title": "Trained, vetted guards to protect your organisation",
+      "lead": "Skilled security personnel for factories, offices, banks and residential buildings — with regular supervision and written reports, around the clock.",
+      "points": [
+        "Every guard police-verified and medically checked",
+        "Surprise supervisor inspections, day and night",
+        "Guards paid on time — lower turnover, steadier service"
+      ],
+      "photo": "Real photo goes here: our guards on duty"
+    },
+    "services": {
+      "eyebrow": "Our services",
+      "title": "The right security personnel for every site",
+      "lead": "From factory gates to bank branches — we deploy guards and supervisors matched to your type of premises and its risks."
+    },
+    "why": {
+      "eyebrow": "Why us",
+      "title": "Security built on discipline, accountability and trust",
+      "lead": "From selecting guards to daily supervision, every step follows written procedures, so you can stop worrying.",
+      "photo": "Real photo goes here: guard training session",
+      "items": [
+        { "title": "Vetted guards", "text": "No guard is deployed without national ID, police verification, medical and reference checks." },
+        { "title": "Ongoing training", "text": "Basic training before deployment, then regular refreshers in firefighting, first aid and visitor management." },
+        { "title": "Strict supervision", "text": "Surprise supervisor inspections day and night, with every visit recorded in writing." },
+        { "title": "Transparent reporting", "text": "A daily occurrence register and a monthly report, so you always know what is happening on site." },
+        { "title": "Guard welfare", "text": "On-time pay, festival bonuses and leave. Satisfied guards mean lower turnover and steadier service." },
+        { "title": "Fully compliant", "text": "Licence, trade licence, TIN and BIN: every document ready to show on request." }
+      ]
+    },
+    "process": {
+      "eyebrow": "How we work",
+      "title": "Security on your site in four steps",
+      "lead": "From the first call to deployment, the process is simple and transparent.",
+      "steps": [
+        { "title": "Get in touch", "text": "Tell us what you need by phone, WhatsApp or the quote form." },
+        { "title": "Free site survey", "text": "Our officer visits the site to assess the risks and the number of guards required." },
+        { "title": "Proposal & contract", "text": "A written quotation, duty plan and clear terms." },
+        { "title": "Deployment & supervision", "text": "Guards deployed and supervised regularly, with a monthly service review." }
+      ]
+    },
+    "industries": {
+      "eyebrow": "Sectors we serve",
+      "title": "We understand what each sector needs",
+      "lead": "From buyer audits in garment factories to bank opening and closing rules, we bring sector-specific experience."
+    },
+    "leadership": {
+      "eyebrow": "Message from the Managing Director",
+      "quote": "Security is not just a service; it is a relationship of trust. A long career in the armed forces taught me that discipline and accountability are the foundation of security. That is the principle by which we select, train and supervise every guard.",
+      "name": "Major (Retd.) [Name]",
+      "role": "Managing Director",
+      "photo": "Real photo goes here: Managing Director",
+      "readMore": "Read the full message"
+    },
+    "clients": {
+      "eyebrow": "Our clients",
+      "title": "Organisations that trust us",
+      "logo": "Client logo",
+      "note": "Client logos and testimonials will be published only with written permission.",
+      "testimonial": "A client testimonial goes here, with the person's name, designation and organisation, published with permission.",
+      "person": "[Name]",
+      "personRole": "[Designation], [Organisation]"
+    },
+    "coverage": {
+      "eyebrow": "Service areas",
+      "title": "From Dhaka and Chattogram, across the country",
+      "lead": "Run from two offices, with guards deployable to any division as needed.",
+      "officesTitle": "Our offices",
+      "offices": [
+        { "name": "Head Office, Dhaka", "address": "House [XX], Road [XX], [Area], Dhaka [XXXX]" },
+        { "name": "Branch Office, Chattogram", "address": "House [XX], Road [XX], [Area], Chattogram [XXXX]" }
+      ],
+      "districts": " districts",
+      "hq": "Head office",
+      "branch": "Branch office"
+    },
+    "careers": {
+      "eyebrow": "Careers",
+      "title": "Join us as a security guard",
+      "lead": "Regular salary, festival bonuses, training and promotion opportunities. Retired army, BGB, police and Ansar members are given priority.",
+      "requirements": [
+        "Age 18 to 45 years",
+        "Minimum education: SSC",
+        "Men: height at least 5 ft 6 in",
+        "Women: height at least 5 ft 2 in"
+      ],
+      "callToApply": "Apply by phone",
+      "fraudTitle": "Warning: we never charge for recruitment",
+      "fraudText": "We do not take any money for recruitment. If anyone asks you for money in our name, do not pay, and inform us immediately.",
+      "fraudVerify": "Verify"
+    }
+  },
+  "divisions": {
+    "dhaka": "Dhaka",
+    "chattogram": "Chattogram",
+    "rajshahi": "Rajshahi",
+    "khulna": "Khulna",
+    "barishal": "Barishal",
+    "sylhet": "Sylhet",
+    "rangpur": "Rangpur",
+    "mymensingh": "Mymensingh"
+  },
+  "industries": {
+    "rmg-garments": "RMG & Textiles",
+    "banking": "Banking & Financial Institutions",
+    "corporate": "Corporate & Multinational Offices",
+    "real-estate": "Real Estate & Housing",
+    "education": "Education",
+    "healthcare": "Hospitals & Healthcare"
+  },
+  "services": {
+    "hub": {
+      "title": "Our services",
+      "lead": "Manpower-based security services, tailored to your type of premises, its size and its risks.",
+      "notSureTitle": "Not sure which service you need?",
+      "notSureText": "Our officer will survey your site free of charge and recommend the right solution and number of guards."
+    },
+    "detail": {
+      "included": "What this service includes",
+      "idealFor": "Ideal for",
+      "deployment": "Deployment model",
+      "vetting": "How every guard is vetted and trained",
+      "reporting": "Supervision and reporting",
+      "pricing": "Pricing",
+      "faq": "Frequently asked questions",
+      "asideTitle": "Get a quote for this service",
+      "asideText": "A written quotation after a free site survey. No obligation.",
+      "related": "Other services",
+      "fullSoon": "The full description of this service will be added in the next milestone."
+    },
+    "items": {
+      "manned-guarding": {
+        "title": "Manned Guarding",
+        "summary": "Trained guards and supervisors on 8- or 12-hour shifts, deployed to your site's needs.",
+        "intro": "A visible, trained presence on your site, day and night. Every guard is vetted and trained before deployment, and supervisors inspect regularly and report in writing.",
+        "included": [
+          "Entrance and gate control, visitor register",
+          "Patrols and inspections at set intervals",
+          "Checking and recording goods in and out",
+          "Immediate response in emergencies and notifying the authorities",
+          "Daily occurrence register and monthly report",
+          "Relief guards to cover leave or absence"
+        ],
+        "idealFor": ["Factories", "Offices", "Bank branches", "Apartments", "Warehouses", "Construction sites"],
+        "deployment": [
+          { "label": "Shifts", "value": "8 hours (3 shifts a day) or 12 hours (2 shifts a day)" },
+          { "label": "Supervision", "value": "1 supervisor for every 10 guards; surprise inspections day and night" },
+          { "label": "Uniform & equipment", "value": "Uniform, ID card, whistle, torch, baton and raincoat; walkie-talkies where needed" },
+          { "label": "Guard profile", "value": "Age 18–45, minimum SSC; priority to retired military and Ansar members" },
+          { "label": "Time to deploy", "value": "Usually within 72 hours of contract" }
+        ],
+        "vetting": [
+          "National ID verification",
+          "Police verification",
+          "Medical examination",
+          "Reference and previous employer checks",
+          "Basic training before deployment",
+          "Firefighting and first-aid training"
+        ],
+        "reporting": [
+          "Daily occurrence register at every post",
+          "Every supervisor visit recorded in writing",
+          "Immediate phone alert and written report for any incident",
+          "Monthly service review meeting"
+        ],
+        "pricing": "Pricing depends on the number of guards, shift length and site risk, charged per guard per month. You receive a written quotation after a free site survey, with no hidden costs.",
+        "faqs": [
+          { "q": "How quickly can guards be deployed?", "a": "Usually within 72 hours of the site survey and contract. For urgent needs, call the hotline and we will try to arrange it sooner." },
+          { "q": "What happens if a guard is absent?", "a": "We keep relief guards on standby. A replacement is sent to cover leave or absence, so your post is never left empty." },
+          { "q": "Are female guards available?", "a": "Yes. We provide trained female guards for searching female staff and visitors at factories, offices and events." },
+          { "q": "Who pays the guards' salaries and benefits?", "a": "The guards are our own employees. We cover their salary, festival bonuses, leave and other obligations under labour law; you simply pay a monthly service bill." }
+        ]
+      },
+      "factory-industrial": {
+        "title": "Factory & Industrial Security",
+        "summary": "Gate control, goods in/out registers, female guards and documentation ready for buyer audits.",
+        "included": [
+          "Guards at main gates, warehouses and loading areas",
+          "Worker entry, exit and searches, with female guards for female workers",
+          "Goods and vehicle in/out registers",
+          "Written records for buyer and compliance audits"
+        ],
+        "idealFor": ["Garment factories", "Textile mills", "Pharmaceutical plants", "Warehouses and depots"]
+      },
+      "corporate-office": {
+        "title": "Corporate & Office Security",
+        "summary": "Reception and visitor management, entry control and after-hours patrols.",
+        "included": [
+          "Courteous, trained guards at reception and lobby",
+          "Visitor register and ID checks",
+          "Parking and lift lobby control",
+          "Regular after-hours patrols"
+        ],
+        "idealFor": ["Corporate offices", "Multinationals", "NGO offices", "Shopping and commercial buildings"]
+      },
+      "bank-atm": {
+        "title": "Bank & ATM Security",
+        "summary": "Trained guards for branches and ATM booths, with set opening and closing protocols.",
+        "included": [
+          "Guards at the branch entrance and banking hall",
+          "24-hour guarding of ATM booths",
+          "Set protocols for branch opening and closing",
+          "Immediate alerts on suspicious activity"
+        ],
+        "idealFor": ["Bank branches", "ATM booths", "Financial institutions", "Mobile banking agent points"]
+      },
+      "residential": {
+        "title": "Residential & Apartment Security",
+        "summary": "Gates, visitor entry, parking and night patrols for apartments and housing societies.",
+        "included": [
+          "Guards at the main gate, day and night",
+          "Visitor and delivery entry register",
+          "Regular patrols of parking and rooftop areas",
+          "Extra guards over Eid and long holidays"
+        ],
+        "idealFor": ["Apartment buildings", "Housing societies", "Private homes", "Projects under construction"]
+      },
+      "event-security": {
+        "title": "Event Security & Crowd Management",
+        "summary": "Entry control and crowd management for weddings, conferences, fairs and corporate events.",
+        "included": [
+          "Ticket and invitation checks at entrances",
+          "Crowd control and queue management",
+          "VIP area and stage security",
+          "Parking and vehicle control"
+        ],
+        "idealFor": ["Weddings and social events", "Conferences and seminars", "Trade fairs", "Corporate events"]
+      }
+    }
+  },
+  "pages": {
+    "about": "About Us",
+    "about/licences": "Licences & Certifications",
+    "about/management": "Management Team",
+    "industries": "Industries We Serve",
+    "industries/rmg-garments": "RMG & Textiles",
+    "industries/banking": "Banking & Financial Institutions",
+    "industries/corporate": "Corporate & Multinational Offices",
+    "industries/real-estate": "Real Estate & Housing",
+    "industries/education": "Education",
+    "industries/healthcare": "Hospitals & Healthcare",
+    "training": "Training Academy",
+    "clients": "Our Clients",
+    "coverage": "Service Areas",
+    "careers": "Careers",
+    "careers/apply-guard": "Join as a Guard",
+    "quote": "Get a Quote",
+    "faq": "FAQ",
+    "news": "News & Notices",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "comingSoon": {
+    "title": "This page is being built",
+    "text": "This page is in the sitemap and will be built in an upcoming milestone. In the meantime, call us or request a quote."
+  },
+  "footer": {
+    "about": "Trained, vetted security guard services for factories, offices, banks and residential buildings, licensed by the Ministry of Home Affairs.",
+    "services": "Services",
+    "company": "Company",
+    "contact": "Contact",
+    "address": "House [XX], Road [XX], [Area], Dhaka [XXXX]",
+    "clients": "Our Clients",
+    "coverage": "Service Areas",
+    "news": "News & Notices",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {year} {name}. All rights reserved."
+  }
+}

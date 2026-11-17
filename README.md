@@ -1,30 +1,56 @@
-# Security Services Website — Bangladesh (EN / বাংলা)
+# Security Services Website — Bangladesh (বাংলা / English)
 
-Bilingual marketing website for a private security services company operating in Bangladesh.
+Bilingual website for a private security services company operating in Bangladesh.
+Bangla is the default language; every page also exists in English.
 
-**Current stage:** structure agreed. Scope, default language and stack are locked; no application code yet.
+**Current stage:** initial design (milestone M1 + M2 of the build plan). Home page,
+Services hub and the Manned Guarding service page are designed in both languages; every
+other sitemap route shows a "being built" page. All company data is placeholder.
 
-- [`docs/01-site-structure.md`](docs/01-site-structure.md) — navigation, full sitemap, page templates,
-  bilingual architecture, content model, repo layout, stack recommendation, build phases.
-- [`docs/02-build-plan.md`](docs/02-build-plan.md) — industry baseline, Bangladeshi cultural & market layer,
-  legal context, design tokens, component inventory, technical architecture, build milestones, inputs checklist.
+## Run it locally
 
-## Languages
+Requires **Node.js 20.9 or newer**.
 
-| Locale | Audience |
+```bash
+git clone https://github.com/rezvirashid-rgb/Security_Website.git
+cd Security_Website
+git checkout claude/nice-maxwell-o5so6r
+npm install
+npm run dev
+```
+
+Open <http://localhost:3000> — it redirects to the Bangla site at `/bn`. Use the
+**বাংলা / English** switch in the top bar to change language on the same page.
+Edits are reloaded in the browser as you save.
+
+| Command | What it does |
 |---|---|
-| `en` — English | corporate / institutional buyers, procurement, tenders |
-| `bn` — বাংলা | residential clients, general public, guard recruitment |
+| `npm run dev` | Development server with live reload on port 3000 |
+| `npm run build` then `npm start` | Production build and server |
+| `npm run check` | Translation parity + Bangla Unicode check, TypeScript, lint |
 
-Full content parity between locales is a hard requirement, not a stretch goal.
+## Where to change things
 
-## Next step
+| To change… | Edit |
+|---|---|
+| Company name, hotline, WhatsApp, email, licence numbers, stats | `src/config/site.ts` (set `isPlaceholder: false` once real) |
+| Any text, in Bangla | `src/dictionaries/bn.json` (the source copy) |
+| The same text, in English | `src/dictionaries/en.json` (must keep the same keys) |
+| Colours, fonts, Bangla typography, cultural motifs | `src/app/globals.css` |
+| Order of services, industries, divisions, header menu | `src/data/catalog.ts` |
+| Page layouts | `src/app/[locale]/…` and `src/components/sections/…` |
 
-Supply the inputs in §8 of the build plan; M1 (foundation scaffold) can start in parallel with placeholders.
+While `isPlaceholder` is `true` the site shows a "design preview" ribbon, tells search
+engines not to index it, and a Vercel production build refuses to run.
 
-## Locked decisions
+## Guard-rails
 
-- **Scope v1:** manpower guarding only (static guards & supervisors, factory/industrial, corporate,
-  bank & ATM, residential, event security).
-- **Default language:** Bangla at the bare domain; Bangla is the source copy, English the translation.
-- **Stack:** Next.js (App Router) + TypeScript + Tailwind, static-first, `next-intl`.
+- **Translation parity:** a key missing from either language fails `npm run check` (and TypeScript).
+- **Bangla Unicode:** text pasted in Bijoy/SutonnyMJ encoding, or with stray Devanagari letters, fails the check.
+- **Honest placeholders:** photo, client-logo and testimonial slots say what goes there instead of using stock images.
+
+## Docs
+
+- [`docs/01-site-structure.md`](docs/01-site-structure.md) — navigation, sitemap, page templates, bilingual architecture.
+- [`docs/02-build-plan.md`](docs/02-build-plan.md) — industry baseline, Bangladeshi cultural layer, legal context,
+  design tokens, component inventory, architecture, milestones, inputs checklist.

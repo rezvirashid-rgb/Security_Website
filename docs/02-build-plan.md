@@ -159,7 +159,7 @@ Mobile-first, 360px minimum. Container 1200px. 8px spacing grid. 44px minimum ta
 
 ### 6.1 Stack
 - **Next.js (App Router), TypeScript strict, Tailwind CSS**, current stable versions pinned at scaffold time.
-- **`next-intl`**, `localePrefix: 'always'`, default `bn`, middleware redirects `/` → `/bn` and remembers the user's choice.
+- **Built-in Next.js i18n** (no extra library): `src/proxy.ts` redirects `/` → `/bn` (or the visitor's saved choice), `next/root-params` gives every server component the locale, and typed `bn.json`/`en.json` dictionaries fail the type check if their keys drift apart. *(Changed from `next-intl` at M1: Next.js 16 documents this pattern natively and it works cleanly with Cache Components.)*
 - All pages **statically generated** (`generateStaticParams` for both locales). Forms are the only server code.
 - Content: JSON (UI strings) + MDX (long-form pages) in mirrored `content/bn` ↔ `content/en` trees.
 
@@ -180,7 +180,7 @@ src/
     api/forms/[type]/route.ts    # quote | contact | guard-application
     sitemap.ts  robots.ts
   components/  layout/ trust/ content/ forms/ ui/
-  i18n/        routing.ts  request.ts  formats.ts (lakh/crore, dates, BN calendar)
+  i18n/        config.ts  dictionaries.ts  format.ts (lakh/crore, Bangla digits)
   lib/         schema-org.ts  validation.ts (zod; BD phone)  email.ts  ratelimit.ts
   data/        divisions-districts-thanas.json  offices.json  stats.json  services.json  festivals.json
 content/       bn/…  en/…        # mirrored, identical keys and filenames
@@ -188,7 +188,7 @@ messages/      bn.json  en.json
 public/        fonts/  images/  docs/company-profile-en.pdf  docs/guard-application-bn.pdf
 scripts/       check-i18n-parity.ts  check-bangla-unicode.ts
 tests/         e2e/ (Playwright)
-middleware.ts  next.config.ts (security headers)
+src/proxy.ts  next.config.ts (security headers)   # Next 16 renamed middleware to proxy
 ```
 
 ### 6.3 Forms pipeline

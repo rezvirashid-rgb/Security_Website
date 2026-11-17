@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* ───────────────────────── Design tokens ─────────────────────────
+   Palette rooted in the national colours without imitating a government
+   site. Red is reserved for the hotline/emergency. Never red on green.   */
+@theme {
+  --color-brand-50: #eef7f3;
+  --color-brand-100: #d5ede3;
+  --color-brand-200: #a9dac6;
+  --color-brand-300: #74c0a2;
+  --color-brand-400: #3fa07d;
+  --color-brand-500: #1d8462;
+  --color-brand-600: #0f6e52;
+  --color-brand-700: #0a5c45; /* primary — 8.0:1 on white */
+  --color-brand-800: #084a38;
+  --color-brand-900: #063a2c;
+  --color-brand-950: #04281f;
+
+  --color-navy-600: #2f4b85;
+  --color-navy-700: #22396b;
+  --color-navy-800: #172a52;
+  --color-navy-900: #0f1e3d; /* header/footer — ~16:1 on white */
+  --color-navy-950: #0a1530;
+
+  --color-alert-50: #fdecee;
+  --color-alert-100: #f9d0d6;
+  --color-alert-600: #c8102e; /* hotline only — 5.9:1 on white */
+  --color-alert-700: #a00d25;
+
+  --color-gold-300: #e6cf7a;
+  --color-gold-400: #d9b84a;
+  --color-gold-500: #c9a227; /* badges, on navy only — 6.8:1 */
+  --color-gold-600: #a8861c;
+
+  --color-paper: #f7f6f2;
+  --color-ink-50: #f4f2ed;
+  --color-ink-100: #efece5;
+  --color-ink-200: #e6e2d9;
+  --color-ink-300: #cfcbc2;
+  --color-ink-400: #a7a299;
+  --color-ink-500: #6e6a62; /* min for body text on paper — 5:1 */
+  --color-ink-600: #57544d;
+  --color-ink-700: #3d3b36;
+  --color-ink-900: #1c1b18;
+
+  --shadow-card: 0 1px 2px rgb(15 30 61 / 0.06), 0 8px 24px -12px rgb(15 30 61 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(15 30 61 / 0.08), 0 20px 40px -16px rgb(15 30 61 / 0.28);
+}
+
+@theme inline {
+  /* Inter has no Bengali glyphs, so Bangla text falls through to Hind Siliguri. */
+  --font-sans: var(--font-inter), var(--font-hind), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ───────────────────────── Base & Bangla typography ───────────────────────── */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  html[lang="bn"] {
+    font-size: 106.25%; /* 17px base: Bangla needs a notch more size */
+  }
+  body {
+    @apply bg-paper text-ink-900 antialiased;
+    line-height: 1.6;
+  }
+  html[lang="bn"] body {
+    line-height: 1.8; /* room for matras and conjuncts */
+  }
+  h1, h2, h3, h4 {
+    @apply text-balance font-bold tracking-tight;
+    line-height: 1.2;
+  }
+  html[lang="bn"] :is(h1, h2, h3, h4) {
+    line-height: 1.4;
+    letter-spacing: 0; /* never tighten Bangla */
+    font-weight: 700;
+  }
+  /* Bangla has no letter case — guard against accidental uppercase utilities. */
+  html[lang="bn"] .uppercase {
+    text-transform: none;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-gold-500);
+    outline-offset: 2px;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* ───────────────────────── Cultural motifs ───────────────────────── */
+@layer components {
+  /* Jamdani-inspired diamond lattice, used at very low opacity on dark bands. */
+  .bg-jamdani {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23C9A227' stroke-width='1'%3E%3Cpath d='M28 10 L38 28 L28 46 L18 28 Z'/%3E%3Cpath d='M28 19 L33 28 L28 37 L23 28 Z'/%3E%3Cpath d='M0 22 L6 28 L0 34 M56 22 L50 28 L56 34'/%3E%3C/g%3E%3Cg fill='%23C9A227'%3E%3Ccircle cx='28' cy='28' r='1.6'/%3E%3Ccircle cx='0' cy='0' r='2'/%3E%3Ccircle cx='56' cy='0' r='2'/%3E%3Ccircle cx='0' cy='56' r='2'/%3E%3Ccircle cx='56' cy='56' r='2'/%3E%3Ccircle cx='28' cy='3' r='1'/%3E%3Ccircle cx='28' cy='53' r='1'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 56px 56px;
+  }
+  /* Nakshi-kantha running stitch, used as a section accent. */
+  .kantha {
+    display: inline-block;
+    height: 3px;
+    width: 2.5rem;
+    border-radius: 2px;
+    background: repeating-linear-gradient(90deg, var(--color-gold-500) 0 7px, transparent 7px 11px);
+  }
+  .kantha-line {
+    height: 2px;
+    background: repeating-linear-gradient(90deg, var(--color-gold-500) 0 8px, transparent 8px 14px);
+  }
+}
