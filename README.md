@@ -44,6 +44,18 @@ While `isPlaceholder` is `true` the site shows a "design preview" ribbon, tells 
 engines not to index it, and a Vercel production build refuses to run unless the Vercel
 project sets `ALLOW_PLACEHOLDER_PRODUCTION=1`. Remove that variable when real data is in.
 
+## Online preview without a server
+
+`scripts/build-snapshot.py` turns the built site into one self-contained HTML file
+(every page in both languages, `#bn-services`-style navigation, inlined CSS and fonts),
+for hosting where no server runs, such as a shareable Claude artifact link:
+
+```bash
+npm run build
+npx next start -p 3100            # in a second terminal
+python3 scripts/build-snapshot.py # writes snapshot/index.html
+```
+
 ## Guard-rails
 
 - **Translation parity:** a key missing from either language fails `npm run check` (and TypeScript).

@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# single-file snapshot for static preview hosting (scripts/build-snapshot.py)
+/snapshot/
